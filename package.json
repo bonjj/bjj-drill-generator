@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "bootstrap-scss": "^5.1.1",
+    "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.41.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.52.1"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build",
+    "compile:sass": "sass --watch scss:assets/css"
+  }
+}

@@ -1,0 +1,34 @@
+// Directions: Open node_modules/bootstrap/scss/variables.scss for reference. View changes on theming-kit.html. 
+// nom run compile:sass
+
+// MY THEME COLOURS OVERRIDES
+// $purple-dark:  #6f42c1;
+// $purple-light: #c5a8fa;
+// $pink: #d63384;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$white:    #fff;
+
+$body-bg: $white;
+$light: $gray-100;
+
+
+// WHITE AND GRAY COLOURS
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// $primary: $purple-dark;
+// $secondary: $pink;
+
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Drill Generator</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-light bg-transparent" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/judo.png" alt="" height="36" class="d-inline-block align-text-middle">
+          </a>
+        </div>
+      </nav>
+
+    <!-- GENERATOR SECTION -->
+
+    <section id="generator-section">
+        
+        <div class="container bg-light border border-1 border-300 rounded" id="generator">
+        
+            <h1 class="display-5 text-center">BJJ Drill Generator</h1>  
+            <p>Choose your preferences:</p>
+
+            <div class="row justify-content-left m-1">
+            <div class="col col-md-auto col-xs-12 p-1">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio1" id="gi" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="gi">Gi</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio1" id="noGi" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="noGi">No Gi</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio1" id="all" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="all">Both</label>
+                  </div>              
+            </div>
+            <div class="col col-md-auto col-xs-12 p-1">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio2" id="top" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="top">Top</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio2" id="bottom" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="bottom">Bottom</label>
+                  </div>               
+            </div>
+            <div class="col col-md-auto col-xs-12 p-1">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio3" id="attack" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="attack">Attack</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio3" id="defence" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="defence">Defence</label>
+                  </div>                  
+            </div>       
+            </div>
+            
+            <input class="btn btn-secondary btn-md m-1" type="submit" value="Submit">
+            <input class="btn btn-secondary btn-md m-1" type="reset" value="Reset">        
+
+        
+        </div>
+          
+    </section>
+
+
+    <!-- VIDEO SECTION -->
+
+
+
+
+    <!-- FOOTER -->
+    
+
+
+
+
+
+    <script src="/index.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

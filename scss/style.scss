@@ -1,0 +1,14 @@
+@use 'custom';
+
+// IMPORT THE COMPONENTS
+
+@use 'components/buttons';
+@use 'components/typography';
+
+// IMPORT THE SECTIONS
+
+@use 'sections/navbar';
+@use 'sections/generator';
+@use 'sections/video';
+@use 'sections/footer';
+
