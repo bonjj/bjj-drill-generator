@@ -1,7 +1,14 @@
 @use '../custom' as *;
 
-#generator {
-    padding: 10px;
+#generator-container {
+    padding: 20px;
+}
 
+#video-section {
+    margin: 20px;
+}
+
+#video-container {
+    padding: 20px;
 }
 
