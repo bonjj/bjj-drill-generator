@@ -1,15 +1,25 @@
 const bootstrap = require('bootstrap')
-
 const { getData } = require('./technique')
 // import "./style.scss";
 
+// Get elements and sections
+
 const techniqueText = document.getElementById('technique-name')
 const techniqueUrl = document.getElementById('technique-url')
-techniqueText.style.visibility = "hidden";
-techniqueUrl.style.visibility = "hidden";
+const videoSrc = document.getElementById('video-src')
 
+const generatorSection = document.getElementById('generator-section')
+const videoSection = document.getElementById('video-section')
 
-// handle button click
+// Onload visibility
+
+// videoSection.style.display = "none";
+
+// techniqueText.style.visibility = "hidden";
+// techniqueUrl.style.visibility = "hidden";
+
+// Handle generate button click
+
 const genBtn = document.querySelector('#generate-btn')
 
 genBtn.onclick = function () {
@@ -17,7 +27,6 @@ genBtn.onclick = function () {
     // Get the user STYLE selection
     const radioGi = document.getElementById('gi');
     const radioNogi = document.getElementById('nogi');
-    const radioBoth = document.getElementById('both');
     let selectedStyle;
 
     if(radioGi.checked) {
@@ -32,7 +41,6 @@ genBtn.onclick = function () {
 
     // Get user MODE selection
     const radioAttack = document.getElementById('attack');
-    const radioDefence = document.getElementById('defence');
     let selectedMode;
 
     if(radioAttack.checked) {
@@ -46,19 +54,34 @@ genBtn.onclick = function () {
     let techData = getData(selectedStyle, selectedMode)
             
     techData.then((techList) => {
-        // console.log(techList);
-        // console.log(techList[5]['name']);
         // Randomiser on result
         let randomTech = techList[Math.floor(Math.random() * techList.length)]
         console.log(randomTech)
+        // Update DOM
         techniqueText.innerText = randomTech['name']
         techniqueUrl.setAttribute('href', `${randomTech['video']}`)
-        console.log(randomTech['video'])
-        techniqueText.style.visibility = "visible";
-        techniqueUrl.style.visibility = "visible";
+        let embedUrl = randomTech['video'].replace("watch?v=", "embed/")
+        console.log(embedUrl)
+        videoSrc.setAttribute('src', `${embedUrl}`)
+
+        // Handle visiblity (WIP)
+        videoSection.classList.replace('hide', 'show')
+        generatorSection.style.display = "none"
+        
+
      })
 
 };
+
+// Close button
+
+const closeIcon = document.getElementById('close-icon')
+
+closeIcon.addEventListener('click', function(){
+    videoSrc.setAttribute('src', '')
+    videoSection.classList.replace('show', 'hide')
+    generatorSection.style.display = "initial"
+})
 
 
 

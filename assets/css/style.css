@@ -11113,6 +11113,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.close-icon {
+  cursor: pointer;
+  vertical-align: text-top;
+}
+
 .display-5 {
   margin: 1.2rem;
   font-family: "Fredoka One", cursive;
@@ -11129,12 +11134,28 @@ textarea.form-control-lg {
   padding: 20px;
 }
 
+#generator-section {
+  margin: 0px 20px;
+}
+
 #video-section {
   margin: 20px;
 }
 
 #video-container {
   padding: 20px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+#embedded-video {
+  margin: 20px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
