@@ -1,23 +1,46 @@
 // Directions: Open node_modules/bootstrap/scss/variables.scss for reference. View changes on theming-kit.html. 
 // npm run compile:sass
 
-// MY THEME COLOURS OVERRIDES
-// $purple-dark:  #6f42c1; 
-// $purple-light: #c5a8fa;
-// $pink: #d63384;
+// MY CUSTOM THEME COLOURS
+
+$bluegrey-dark: #000a12;
+$bluegrey-mid: #0b181d;
+$bluegrey-light: #1c262a;
+
+$teal: #64ffda;
+$teal-light: #9effff;
+
+$purple-dark: #3f1dcb;
+$purple-mid: #7c4dff;
+$purple-light: #b47cff;
+
+$pink: #ff4572;
+
+// WHITE AND GRAY COLOURS
+$white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
-$white:    #fff;
-$primary: #0d6efd;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
 
-$body-bg: $white;
-$light: $gray-100;
-
-$tooltip-bg: $primary;
+// OVERRIDES
 
 
+$primary: $purple-light;
+$secondary: $bluegrey-mid;
+$dark: $bluegrey-dark;
+$light: $teal-light;
+$danger: $gray-600;
 
+$tooltip-bg: $purple-mid;
+$body-bg: $secondary;
+$gradient: linear-gradient(to right bottom, $teal, $purple-mid);
 
 // $tooltip-font-size:                 $font-size-sm;
 // $tooltip-max-width:                 200px;
@@ -36,21 +59,9 @@ $tooltip-bg: $primary;
 
 
 
-// WHITE AND GRAY COLOURS
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
 
-// $primary: $purple-dark;
-// $secondary: $pink;
+
+
 
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

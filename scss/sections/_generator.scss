@@ -2,17 +2,18 @@
 
 #generator-container {
     padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: $gradient;
+    border-image-slice: 1;
+    width: 50vw;
 }
 
 #generator-section {
-    margin: 0px 20px;
+    margin: 10px;
 }
 
-#video-section {
-    margin: 20px;
+body {
+    height: 100vh;
+    overflow-y: hidden;
 }
-
-#video-container {
-    padding: 20px;
-}
-

@@ -1,11 +1,33 @@
+@use '../custom' as *;
+
+#video-container {
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: $gradient;
+    border-image-slice: 1;
+    width: 90vw;
+}
+
+#video-section {
+   margin-bottom: 50px;
+}
+
+#embedded-video {
+    margin: 10px;
+    height: 480px;
+    width: 854px;
+}
+
 .hide {
-    visibility: hidden;
+    opacity: 0;
 }
 
 .show {
     visibility: visible;
+    transition-timing-function: ease-out;
+    transition: .3s;
+    transform: translateY(0);
 }
 
-#embedded-video {
-    margin: 20px 0px;
-}
+

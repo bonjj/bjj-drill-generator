@@ -3,7 +3,6 @@ require('dotenv').config()
 const supabase = require('@supabase/supabase-js')
 const SUPABASE_URL = 'https://dnvzavjmxhnqnnecrzsb.supabase.co'
 const supabaseClient = supabase.createClient(SUPABASE_URL, process.env.SUPABASE_KEY)
-// const supabaseClient = supabase.createClient(SUPABASE_URL, '')
 
 const getData = (style, mode) => {
     if (style === 'both') {
