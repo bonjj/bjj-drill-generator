@@ -11150,13 +11150,13 @@ textarea.form-control-lg {
   width: 80vw;
 }
 
+@media screen and (device-width: 320px) {
+  #generator-container {
+    height: 50vh;
+  }
+}
 #generator-section {
   margin: 10px;
-}
-
-body {
-  height: 100vh;
-  overflow-y: hidden;
 }
 
 #video-container {
@@ -11168,14 +11168,18 @@ body {
   width: 90vw;
 }
 
+@media screen and (device-width: 320px) {
+  #video-container {
+    height: 60vh;
+  }
+}
 #video-section {
   margin-bottom: 50px;
 }
 
 #embedded-video {
+  position: relative;
   margin: 10px;
-  height: 480px;
-  width: 854px;
 }
 
 .hide {

@@ -9,11 +9,18 @@
     width: 80vw;
 }
 
+@media screen
+  and (device-width: 320px){
+  #generator-container {
+      height: 50vh;
+  }  
+  }
+
 #generator-section {
     margin: 10px;
 }
 
-body {
-    height: 100vh;
-    overflow-y: hidden;
-}
+// body {
+//     height: 100vh;
+//     overflow-y: hidden;
+// }
