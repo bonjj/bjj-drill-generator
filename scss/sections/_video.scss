@@ -11,6 +11,18 @@
     position: relative;
 }
 
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    #video-container {
+        height: 90vh;
+        width: auto;
+    }
+
+}
+
 #video-container iframe {
     height: 100%;
     left: 0;

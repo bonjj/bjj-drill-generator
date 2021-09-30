@@ -10,11 +10,23 @@
 }
 
 @media screen
-  and (device-width: 320px){
+  and (device-width: 320px)
+  and (orientation: portrait) {
   #generator-container {
       height: 50vh;
   }  
   }
+
+  @media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (orientation: landscape) {
+    #generator-container {
+        height: 90vh;
+        width: auto;
+    }
+
+}
 
 #generator-section {
     margin: 10px;

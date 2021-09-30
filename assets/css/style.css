@@ -11150,9 +11150,15 @@ textarea.form-control-lg {
   width: 80vw;
 }
 
-@media screen and (device-width: 320px) {
+@media screen and (device-width: 320px) and (orientation: portrait) {
   #generator-container {
     height: 50vh;
+  }
+}
+@media screen and (device-width: 320px) and (device-height: 640px) and (orientation: landscape) {
+  #generator-container {
+    height: 90vh;
+    width: auto;
   }
 }
 #generator-section {
@@ -11170,6 +11176,12 @@ textarea.form-control-lg {
   position: relative;
 }
 
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  #video-container {
+    height: 90vh;
+    width: auto;
+  }
+}
 #video-container iframe {
   height: 100%;
   left: 0;
