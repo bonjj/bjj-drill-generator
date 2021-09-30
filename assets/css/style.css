@@ -11147,7 +11147,7 @@ textarea.form-control-lg {
   border-width: 2px;
   border-image: linear-gradient(to right bottom, #64ffda, #7c4dff);
   border-image-slice: 1;
-  width: 50vw;
+  width: 80vw;
 }
 
 #generator-section {

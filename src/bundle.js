@@ -12615,7 +12615,6 @@ module.exports={
 },{}],57:[function(require,module,exports){
 const bootstrap = require('bootstrap')
 const { getData } = require('./technique')
-// import "./style.scss";
 
 // Get elements and sections
 
@@ -12735,7 +12734,6 @@ const closeIcon = document.getElementById('close-icon')
 closeIcon.addEventListener('click', function(){
     videoSrc.setAttribute('src', '')
     videoSection.classList.replace('show', 'hide')
-    // videoSection.style.display = "none"
     generatorSection.style.display = "block"
 })
 
@@ -12751,12 +12749,14 @@ closeIcon.addEventListener('click', function(){
 
 
 },{"./technique":58,"bootstrap":50}],58:[function(require,module,exports){
+(function (process){(function (){
 require('dotenv').config()
 
 const supabase = require('@supabase/supabase-js')
 const SUPABASE_URL = 'https://dnvzavjmxhnqnnecrzsb.supabase.co'
-// const supabaseClient = supabase.createClient(SUPABASE_URL, process.env.SUPABASE_KEY)
-const supabaseClient = supabase.createClient(SUPABASE_URL, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTY4NzkwNiwiZXhwIjoxOTQ3MjYzOTA2fQ.BkjUN0IJDBo3RKDnvhxd1X-B-glREsoDDj5Gbvxbm2s')
+const supabaseClient = supabase.createClient(SUPABASE_URL, process.env.SUPABASE_KEY)
+
+// Get all techniques from Supabase!
 
 const getData = (style, mode) => {
     if (style === 'both') {
@@ -12789,4 +12789,5 @@ module.exports = {
 
 }
 
-},{"@supabase/supabase-js":44,"dotenv":52}]},{},[57]);
+}).call(this)}).call(this,require('_process'))
+},{"@supabase/supabase-js":44,"_process":4,"dotenv":52}]},{},[57]);

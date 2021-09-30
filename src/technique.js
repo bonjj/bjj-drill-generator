@@ -4,6 +4,8 @@ const supabase = require('@supabase/supabase-js')
 const SUPABASE_URL = 'https://dnvzavjmxhnqnnecrzsb.supabase.co'
 const supabaseClient = supabase.createClient(SUPABASE_URL, process.env.SUPABASE_KEY)
 
+// Get all techniques from Supabase!
+
 const getData = (style, mode) => {
     if (style === 'both') {
     return supabaseClient.from('techniques')

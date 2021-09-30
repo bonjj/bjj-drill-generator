@@ -1,6 +1,5 @@
 const bootstrap = require('bootstrap')
 const { getData } = require('./technique')
-// import "./style.scss";
 
 // Get elements and sections
 
@@ -120,7 +119,6 @@ const closeIcon = document.getElementById('close-icon')
 closeIcon.addEventListener('click', function(){
     videoSrc.setAttribute('src', '')
     videoSection.classList.replace('show', 'hide')
-    // videoSection.style.display = "none"
     generatorSection.style.display = "block"
 })
 
