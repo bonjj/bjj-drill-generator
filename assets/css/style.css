@@ -11166,13 +11166,18 @@ textarea.form-control-lg {
   border-image: linear-gradient(to right bottom, #64ffda, #7c4dff);
   border-image-slice: 1;
   width: 90vw;
+  overflow: hidden;
+  position: relative;
 }
 
-@media screen and (device-width: 320px) {
-  #video-container {
-    height: 60vh;
-  }
+#video-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0%;
+  width: 100%;
 }
+
 #video-section {
   margin-bottom: 50px;
 }
